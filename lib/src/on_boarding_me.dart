@@ -10,11 +10,11 @@ import 'package:onboardme/utilities/widgets/onboarding_screen/bgBoxDecoration.da
 class OnboardingMe extends StatefulWidget {
   /// Number of Pages for the screens
   @required
-  int numOfPage;
+  late int numOfPage;
 
   /// No of colors you want for your screen
   @required
-  int noOfBackgroundColor;
+  int? noOfBackgroundColor;
 
   /// List of background colors => In ascending order
   @required
@@ -29,7 +29,7 @@ class OnboardingMe extends StatefulWidget {
   bool isPageIndicatorCircle = false;
 
   @required
-  String homeRoute;
+  String? homeRoute;
 
   /// Class Constructor
   OnboardingMe({

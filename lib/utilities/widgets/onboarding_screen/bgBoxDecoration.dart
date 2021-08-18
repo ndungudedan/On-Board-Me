@@ -15,6 +15,6 @@ Decoration bgBoxDecoration(List bgColor) {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           stops: noOfParts,
-          colors: bgColor,
+          colors: bgColor as List<Color>,
         ));
 }
